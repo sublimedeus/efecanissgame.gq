@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>Efecan Satranç</title>
+	<style type="text/css">
+		body {
+			background-image: url("image.png");
+			background-repeat: no-repeat;
+			background-size: auto;
+		}
+		#controls {
+			text-align: center;
+		}
+		#inst {
+			width: 100%;
+			height: 100%;
+			padding:20px 0px ;
+			text-align: center;
+			font-size: 20px;
+			background-color:#b4b4b4;
+			color: red ;
+		}
+		.b3 {
+ 		    color: black;
+		    padding: 15px 49.5px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    cursor: pointer;
+		    border-radius: 19px;
+		}
+		.b3:hover {
+		    background-color: cyan;
+		    color: red;
+		}
+		.b2 {
+ 		    color: black;
+		    padding: 15px 31.5px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    cursor: pointer;
+		    border-radius: 19px;
+		}
+		.b2:hover {
+		    background-color: cyan;
+		    color: red;
+		}
+		.b1 {
+ 		    color: black;
+		    padding: 15px 18px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    cursor: pointer;
+		    border-radius: 19px;
+		}
+		.b1:hover {
+		    background-color: cyan;
+		    color: red  ;
+		}
+		#buttk:hover {
+			color:red;
+			background-color: #787878;
+		}
+		
+	</style>
+</head >
+<body >
+	<h1 align="center" style="color:red ; font-size: 80px">Satranc</h1>
+	<div style= "display:none" id="inst">
+		<br/><br/>
+		1. satranc oyunu istediginiz gibi oynayin.<br/>
+		2. Her oyuncunun hamle yapmak icin 60 saniyesi olacaktir.<br/>
+            Ve o sure icinde hamlesini yapmazsa, rakibi kazanan ilan edilecek.<br/>
+        3. Tum oyun 45 dakikada tamamlanmalidir.<br/>
+            Bu sureden sonra oyun berabere ilan edilecektir.<br/>
+        4. Oyun herhangi bir zamanda duraklatilabilir, ancak oyun yeniden baslatilana kadar oyun tahtasi goruntulenmez.<br>
+        5.<a href="https://instagram.com/efecan_755"> Efecan</a> oyunun sahibi iyi eglenceler diler<br/><br/><br/><br/><br/>
+
+			<button id="buttk" onclick ="instr()" style="width:100px; height:40px; border-radius:40%; border:2px red solid;"><strong>Tamam</strong></button>
+	</div>
+	<div id="controls">
+	<a href="player_computer.html"><button class="b1" >OYUNCU VS PC</button></a><br/><br>
+	<a href="two_player.html"><button class="b2">2 OYUNCU</button></a><br/><br>
+	<button class="b3" onclick="instr()" >Bilgilendirme</button></a>
+    </div>
+    <script type="text/javascript">
+    	function instr(){
+    		var con=document.getElementById("controls");
+           if(con.style.display ==="none"){
+            con.style.display="block";
+           }
+           else{con.style.display="none";}
+    		var ins=document.getElementById("inst");
+           if(ins.style.display ==="none"){
+            ins.style.display="block";
+           }
+           else{ins.style.display="none";}
+    	}
+    </script>
+
+</body>
+</html>
